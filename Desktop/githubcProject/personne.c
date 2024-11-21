@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define MAX_PERSONNES 10  
+#define MAX_PERSONNES 100
 
 
 struct Adresse {
@@ -51,7 +51,6 @@ void afficherPersonnes() {
     }
 
     for (int i = 0; i < nombrePersonnes; i++) {
-        //struct Personne p = personnes[i];
         printf("\nPersonne %d:\n", i + 1);
         printf("Nom: %s\n", personnes[i].nom);
         printf("Âge: %d\n", personnes[i].age);
@@ -59,7 +58,6 @@ void afficherPersonnes() {
     }
 }
 
-// Fonction pour mettre à jour les informations d'une personne
 void mettreAJourPersonne() {
     int index;
     printf("Entrez le numéro de la personne à mettre à jour (1 à %d) : ", nombrePersonnes);
